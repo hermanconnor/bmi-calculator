@@ -59,12 +59,140 @@
 
       <!-- CALCULATOR SECTION -->
       <section class="calculator-section">
+        <h2 class="section-title">BMI Calculator</h2>
+        <p>Calculate your Body Mass Index</p>
         <div class="calculator-container">
-          <h2 class="section-title">BMI Calculator</h2>
-          <p>Calculate your Body Mass Index</p>
+          <!-- TABS -->
+          <div class="tabs" role="tablist">
+            <button
+              id="metric-tab"
+              class="tab active"
+              role="tab"
+              aria-selected="true"
+              aria-controls="metric-content"
+            >
+              Metric (kg/cm)
+            </button>
+            <button
+              id="imperial-tab"
+              class="tab"
+              role="tab"
+              aria-selected="false"
+              aria-controls="imperial-content"
+            >
+              Imperial (lb/in)
+            </button>
+          </div>
+          <!-- TAB CONTENT -->
+          <div class="tab-content">
+            <form id="bmi-form">
+              <!-- Metric -->
+              <div
+                id="metric-content"
+                role="tabpanel"
+                aria-labelledby="metric-tab"
+              >
+                <div class="form-group">
+                  <label for="weight-kg">Weight (kg)</label>
+                  <input
+                    type="number"
+                    id="weight-kg"
+                    min="20"
+                    max="300"
+                    step="0.1"
+                    placeholder="Enter weight in kilograms"
+                    required
+                  />
+                  <div id="weight-kg-error" class="error-message">
+                    Please enter a valid weight (20-300 kg)
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="height-cm">Height (cm)</label>
+                  <input
+                    type="number"
+                    id="height-cm"
+                    min="50"
+                    max="250"
+                    step="0.1"
+                    placeholder="Enter height in centimeters"
+                    required
+                  />
+                  <div id="height-cm-error" class="error-message">
+                    Please enter a valid height (50-250 cm)
+                  </div>
+                </div>
+              </div>
+              <!-- Imperial -->
+              <div
+                id="imperial-content"
+                role="tabpanel"
+                aria-labelledby="imperial-tab"
+                style="display: none"
+              >
+                <div class="form-group">
+                  <label for="weight-lb">Weight (lb)</label>
+                  <input
+                    type="number"
+                    id="weight-lb"
+                    min="40"
+                    max="700"
+                    step="0.1"
+                    placeholder="Enter weight in pounds"
+                    required
+                  />
+                  <div id="weight-lb-error" class="error-message">
+                    Please enter a valid weight (40-700 lb)
+                  </div>
+                </div>
+                <div class="input-group">
+                  <div class="form-group">
+                    <label for="height-ft">Height (ft)</label>
+                    <input
+                      type="number"
+                      id="height-ft"
+                      min="1"
+                      max="8"
+                      step="1"
+                      placeholder="Feet"
+                      required
+                    />
+                    <div id="height-ft-error" class="error-message">
+                      Please enter a valid height (1-8 ft)
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="height-in">Height (in)</label>
+                    <input
+                      type="number"
+                      id="height-in"
+                      min="0"
+                      max="11"
+                      step="1"
+                      placeholder="Inches"
+                      required
+                    />
+                    <div id="height-in-error" class="error-message">
+                      Please enter a valid height (0-11 in)
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-          <!-- BMI Result -->
-          <div id="result"></div>
+              <button type="submit">Calculate BMI</button>
+            </form>
+
+            <!-- BMI Result -->
+            <div id="result" class="result">
+              <h2>Your BMI Result</h2>
+              <div id="bmi-value" class="result-value">0.0</div>
+              <div id="bmi-category" class="result-category">Normal weight</div>
+              <p id="bmi-message">
+                Your BMI indicates that you have a healthy weight for your
+                height.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

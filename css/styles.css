@@ -89,6 +89,15 @@ main {
   margin: 1rem 0;
 }
 
+.calculator-container {
+  max-width: 500px;
+  margin: 2rem 0;
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;

@@ -210,6 +210,11 @@ button:focus {
   margin-bottom: 0.5rem;
 }
 
+.result-category {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
 .error-message {
   color: var(--danger-color);
   font-size: 0.875rem;

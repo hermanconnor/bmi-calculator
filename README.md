@@ -43,7 +43,7 @@ A responsive, accessible, and interactive **BMI (Body Mass Index) Calculator** b
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/bmi-calculator.git
+   git clone https://github.com/hermanconnor/bmi-calculator.git
    cd bmi-calculator
    ```
 

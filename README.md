@@ -25,9 +25,9 @@ A responsive, accessible, and interactive **BMI (Body Mass Index) Calculator** b
 
 - **Imperial**:
 
-  $$
-  \text{BMI} = \frac{\text{weight (lb)} \times 703}{(\text{height (in)})^2}
-  $$
+$$
+\text{BMI} = \frac{\text{weight (lb)} \times 703}{\text{height (in)}^2}
+$$
 
 ## 📚 BMI Categories
 
